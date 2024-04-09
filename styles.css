@@ -7,9 +7,23 @@
 
 /* Setting basic styles for body */
 body {
+    background-image: url('prof.jpg');
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100000%;
+    background-color: rgba(0, 162, 255, 0.5); /* Adjust the opacity (last value) as needed */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
 
 /* Container styles */
@@ -21,15 +35,24 @@ body {
 
 /* Header styles */
 .header {
-    background-color: #333;
+    background-color: #1e8892b8;
     color: #fff;
     padding: 20px;
+    position: fixed;
+    margin-top: 0px;
+    width: 100%;
+    z-index: 900;
 }
 
 /* Navigation styles */
 .navbar {
-    background-color: #555;
+    position: fixed;
+    right: 0px;
+    width: 40%;
+    background-color: #185459c7;
     padding: 10px;
+    margin-top: 19px;
+    z-index: 999;
 }
 
 .navbar ul {
@@ -51,15 +74,45 @@ body {
 /* Main content styles */
 .main-content {
     padding: 20px;
+
 }
 
 /* Footer styles */
 .footer {
     position: fixed;
     bottom: 0px;
-    background-color: #333;
+    background-color: #0e2b34c3;
     color: #fff;
     padding: 20px;
     text-align: center;
     width: 100%;
+}
+
+.centered-text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered-text a {
+    
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Styling the big text */
+.centered-text h1 {
+    font-size: 48px; /* Adjust the font size as needed */
+}
+
+.home-about {
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
