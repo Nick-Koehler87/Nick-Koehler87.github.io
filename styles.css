@@ -7,7 +7,7 @@
 
 /* Setting basic styles for body */
 body {
-    background-image: url('prof.jpg');
+    background-image: url('Prof.jpg');
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
@@ -21,7 +21,7 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100000%;
+    height: 1000%;
     background-color: rgba(0, 162, 255, 0.5); /* Adjust the opacity (last value) as needed */
     z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
@@ -73,7 +73,8 @@ body::before {
 
 /* Main content styles */
 .main-content {
-    padding: 20px;
+    
+    padding-top: 100px;
 
 }
 
@@ -108,6 +109,12 @@ body::before {
     font-size: 48px; /* Adjust the font size as needed */
 }
 
+.centered-text p {
+    padding: 5%;
+    background: linear-gradient(to right, rgba(81, 93, 97, 0.6), rgba(81, 93, 97, .98), rgba(81, 93, 97, 0.6));
+}
+
+
 .home-about {
     color: white;
     position: absolute;
@@ -115,4 +122,9 @@ body::before {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.home-about p {
+    padding: 5%;
+    background: linear-gradient(to right, rgba(81, 93, 97, 0.6), rgba(81, 93, 97, .98), rgba(81, 93, 97, 0.6));
 }

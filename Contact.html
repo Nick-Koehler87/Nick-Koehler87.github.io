@@ -9,9 +9,9 @@
 </head>
 <body>
     <!-- Your content goes here -->
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
+    <header >
+        <h1 class="header">Contact</h1>
+        <nav class="navbar">
             <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
@@ -21,18 +21,39 @@
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
-
-        <p>Hello! My name is Nicholas Koehler! I am a student at The University of North Carolina at Charllote!  I am graduating in May 2024</p>
-
     </header>
     
-    <section>
-        <h2>About Us</h2>
-        <p>This is where you can write about your website or company.</p>
+    <section class="main-content">
+        <table cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td align="center">
+                    <table cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
+                        <tr>
+                            <td align="center" bgcolor="#f0f0f0" style="padding: 40px 0;">
+                                <h1>Contact</h1>
+                                <h3>0NicholasKoehler@gmail.com</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" bgcolor="#ffffff" style="padding: 40px 20px;">
+                                <form action="mailto:0NicholasKoehler@gmail.com" method="post" enctype="text/plain">
+                                    <input type="text" name="name" placeholder="Your Name" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+                                    <input type="email" name="email" placeholder="Your Email" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+                                    <textarea name="message" placeholder="Your Message" style="width: 100%; padding: 10px; margin-bottom: 10px; height: 150px;"></textarea>
+                                    <input type="submit" value="Send" style="width: 100%; padding: 10px; background-color: #007bff; color: #ffffff; border: none; cursor: pointer;">
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
     </section>
-    
-    <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
+
+    <footer class="footer">
+        <h4>Contact</h4>
+        <p>Email: 0NicholasKoehler@gmail.com</p>
+        <p>&copy; 2024 Nicholas Koehler. All rights reserved.</p>
     </footer>
 
     <!-- You can link external JavaScript files or add internal scripts here -->
